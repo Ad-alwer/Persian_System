@@ -44,7 +44,7 @@
       </section>
 
       <!-- Title  -->
-      <section class="position-relative mb-5">
+      <section class="position-relative mb-5 my-2">
         <div class="d-flex flex-column align-items-center">
           <h1 class="fw-bold mt-lg-5 text-center">
             <span class="">خرید و فروش کامپیتور و لپتاپ</span>
@@ -143,17 +143,25 @@
             />
           </svg>
       </section>
+
+      <!-- Sliders -->
+       <productSliders  />
+       
     </main>
   </div>
 </template>
 
 <script>
 import hmheader from "./Header.vue";
+import productSliders from "./Home/Sliders.vue";
+
+
 
 export default {
   name: "Home",
   components: {
     hmheader,
+    productSliders
   },
 };
 </script>
