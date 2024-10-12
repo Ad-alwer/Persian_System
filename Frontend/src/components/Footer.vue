@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="col-4">
-        <div class="d-flex flex-column align-items-center gap-3 social-parent">
+        <div class="d-flex flex-column align-items-center gap-3 mt-3">
           <p class="h3 fw-bold text-center">به ما بپیوندید</p>
           <div class="d-flex justify-content-center gap-3">
             <div class="p-2 img-icon-parent rounded-3 pointer">
