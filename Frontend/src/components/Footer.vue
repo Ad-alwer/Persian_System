@@ -56,7 +56,7 @@ export default {
 /* icons */
 
 .img-icon-parent {
-  background-color: rgb(128, 128, 128, 0.4);
+  background-color: rgb(128, 128, 128, 0.3);
 }
 .img-icon {
   width: 30px;
