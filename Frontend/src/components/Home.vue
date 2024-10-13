@@ -149,7 +149,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="mt-5 container">
+    <footer class="mt-5 containe">
       <hmfooter />
     </footer>
   </div>

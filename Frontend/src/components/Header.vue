@@ -54,13 +54,72 @@
           <ul
             class="navbar-nav mb-0 w-50 d-lg-flex justify-content-evenly d-none"
           >
-            <li class="nav-item d-flex justify-content-center active-cyan">
+            <li
+              class="nav-item d-flex justify-content-center active-cyan position-relative"
+            >
               <a
-                class="nav-link pb-2 px-1 fw-bolder d-flex gap-2"
+                class="nav-link pb-2 px-1 fw-bolder d-flex gap-2 product-text"
                 aria-current="page"
                 href="#"
                 ><span>محصولات</span> <i class="bi bi-chevron-down"></i
               ></a>
+
+              <div class="header-category-parent p-3 d-none rounded-4">
+                <div class="row h-100  overflow-hidden">
+                  <div class="col-3 header-category">
+                    <ul class="py-3">
+                      <li class="d-flex align-items-center gap-3 lh-lg">
+                        <img
+                          src="../assets/img/motherboard.svg"
+                          alt=""
+                          class="img-fluid category-svg"
+                        />
+                        <span class="fs-5 fw-bold text-dark"
+                          >قطعات کامپیوتر</span
+                        >
+                      </li>
+                      <li class="d-flex align-items-center gap-3 lh-lg">
+                        <img
+                          src="../assets/img/mouse.svg"
+                          alt=""
+                          class="img-fluid category-svg"
+                        />
+                        <span class="fs-5 fw-bold text-secondary"
+                          >لوازم جانبی</span
+                        >
+                      </li>
+                      <li class="d-flex align-items-center gap-3 lh-lg">
+                        <img
+                          src="../assets/img/laptop.svg"
+                          alt=""
+                          class="img-fluid category-svg"
+                        /><span class="fs-5 fw-bold text-secondary">لپتاپ</span>
+                      </li>
+                      <li class="d-flex align-items-center gap-3 lh-lg">
+                        <img
+                          src="../assets/img/monitor.svg"
+                          alt=""
+                          class="img-fluid category-svg"
+                        /><span class="fs-5 fw-bold text-secondary"
+                          >مانیتور</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="col-9 header-subcateory">
+                    <ul class="py-3 py-3">
+                      <li class="">مادربرد</li>
+                      <li class="">پردازنده</li>
+                      <li class="">کارت گرافبک</li>
+                      <li class="">پاور</li>
+                      <li class="">هارد</li>
+                      <li class="">درایو نوری</li>
+                      <li class="">فن و حنک کننده</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </li>
             <li class="nav-item d-flex justify-content-center">
               <a class="nav-link pb-2 fw-bolder" href="#">درخواست محصول</a>
@@ -176,5 +235,43 @@ nav::before {
 .navbar-toggler:active {
   outline: none !important;
   box-shadow: none !important;
+}
+
+/* category */
+.header-category-parent {
+  width: 1200px;
+  height: 400px;
+  position: absolute;
+  z-index: 5;
+  right: -300px;
+  top: 42px;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.category-svg {
+  width: 20px;
+  height: 20px;
+}
+
+.header-category ul {
+  height: 100%;
+  border-left: 3px solid var(--hard-cyan);
+}
+.header-subcateory ul {
+  column-count: 1;
+}
+.header-subcateory ul li {
+  line-height: 38px;
+  cursor: pointer;
+}
+
+.li-column-2 {
+  column-count: 1;
+}
+
+/* Category hover  */
+.product-text:hover + .header-category-parent,
+.header-category-parent:hover {
+  display: block !important;
 }
 </style>
