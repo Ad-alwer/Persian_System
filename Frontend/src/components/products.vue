@@ -7,7 +7,13 @@
 
     <!-- Body -->
     <main class="container mt-3">
-      <section class="row">
+      <!-- Breadcrumb -->
+      <section class="breadcrumb-parent py-2 px-4 rounded-pill" >
+        <breadcrumb />
+      </section>
+
+      <!-- Body -->
+      <section class="row mt-3">
         <!-- Sort Box -->
         <div
           class="sort-parent p-2 rounded-3 ms-3 col-3 mt-2 d-flex flex-column gap-2"
@@ -172,16 +178,24 @@
 <script>
 import hmheader from "./Header.vue";
 import hmfooter from "./Footer.vue";
+import breadcrumb from "./breadcrumb.vue";
 export default {
   name: "products",
   components: {
     hmheader,
     hmfooter,
+    breadcrumb,
   },
 };
 </script>
 
 <style scoped>
+
+/* Breadcrumb */
+.breadcrumb-parent{
+  background-color: rgba(128, 128, 128, 0.27);
+  width: 93%;
+}
 /* Product box */
 .col-8 > div {
   background-color: rgba(128, 128, 128, 0.27);
