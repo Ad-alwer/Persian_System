@@ -8,7 +8,7 @@
     <!-- Body -->
     <main class="container mt-3">
       <!-- Breadcrumb -->
-      <section class="breadcrumb-parent py-2 px-4 rounded-pill" >
+      <section class="breadcrumb-parent py-2 px-4 rounded-pill">
         <breadcrumb />
       </section>
 
@@ -166,6 +166,13 @@
           </div>
         </div>
       </section>
+
+      <!-- Pagenation -->
+      <section
+        class="pagenation-parent mt-4 d-flex justify-content-center rounded-pill"
+      >
+        <pagenation />
+      </section>
     </main>
 
     <!-- Footer -->
@@ -179,20 +186,21 @@
 import hmheader from "./Header.vue";
 import hmfooter from "./Footer.vue";
 import breadcrumb from "./breadcrumb.vue";
+import pagenation from "./pagenation.vue";
 export default {
   name: "products",
   components: {
     hmheader,
     hmfooter,
     breadcrumb,
+    pagenation,
   },
 };
 </script>
 
 <style scoped>
-
 /* Breadcrumb */
-.breadcrumb-parent{
+.breadcrumb-parent {
   background-color: rgba(128, 128, 128, 0.27);
   width: 93%;
 }
@@ -276,5 +284,11 @@ export default {
 .option-box {
   height: 90px;
   overflow-y: auto;
+}
+
+/* pagenation parent */
+.pagenation-parent {
+  background: rgba(128, 128, 128, 0.25);
+  width: 93%;
 }
 </style>
